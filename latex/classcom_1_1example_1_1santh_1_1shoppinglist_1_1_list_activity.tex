@@ -1,0 +1,304 @@
+\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity}{}\section{com.\+example.\+santh.\+shoppinglist.\+List\+Activity Class Reference}
+\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity}\index{com.\+example.\+santh.\+shoppinglist.\+List\+Activity@{com.\+example.\+santh.\+shoppinglist.\+List\+Activity}}
+
+
+List Activity Class is used to represent all items with their respective information and performs delete operation of item and cross over.  
+
+
+Inheritance diagram for com.\+example.\+santh.\+shoppinglist.\+List\+Activity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.424936cm]{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries New\+Sync\+Items}
+\item 
+class {\bfseries Syncexternal}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ad2d33376b6c33875d85c9250077c7f0a}{on\+Accuracy\+Changed} (Sensor sensor, int accuracy)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3fe70255c4756fc99021e0ed27683548}{on\+Sensor\+Changed} (Sensor\+Event event)
+\begin{DoxyCompactList}\small\item\em on detecting Shake Delete all Items in the List \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ab9ad7fc938dbd932094363fc1e56eac9}{on\+Sensor\+Change} (Sensor\+Event sensor\+Event)
+\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a89a36a191d70c8b9d07db5eda2e804e4}{on\+Create\+Options\+Menu} (Menu menu)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3aa761782d9eb5c28ec21734e407970d}{Add\+Item} (View v)
+\begin{DoxyCompactList}\small\item\em Add Item rediretcs to Item activity. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a1a93b6350edb03460299def603c57a44}{is\+Online} ()
+\begin{DoxyCompactList}\small\item\em Determines if the device is internet able. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a019462edc2e1d011fe110720b294fe41}{Sync\+Items} (View v)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_aeb713dae9574328c1179a3a1fe298365}{on\+Refresh} ()
+\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a07f94ec03899822148ce095082318cdb}{on\+Options\+Item\+Selected} (Menu\+Item item)
+\begin{DoxyCompactList}\small\item\em Performs necessary function on clicking respective Menu Item. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ac120c9e11a30ad182b0c2e146bbc420a}{Deletedialog} ()
+\begin{DoxyCompactList}\small\item\em Delete all Items in the List. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3e5d96fe6cb761f9b036c552a5078406}{display\+Data\+Custom} ()
+\begin{DoxyCompactList}\small\item\em Send Data to \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_my_custom_adapter}{My\+Custom\+Adapter}. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ae309a9528aeacc4614e63dd6946bbdfe}{get\+Price} ()
+\begin{DoxyCompactList}\small\item\em Show the price of List. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a5941058d8bb35fffa810cdc1bc7cb78b}{on\+Back\+Pressed} ()
+\begin{DoxyCompactList}\small\item\em Back Pressed method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static final boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a67c3e8b285551793d2095968b583c92e}{is\+Valid\+Email} (Char\+Sequence target)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Alert\+Dialog \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a10f069d18425057cd9c3c13a3a1ab011}{my\+Alert\+Dialog}
+\item 
+Alert\+Dialog \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ad19898c97695f5a48727227122c055dd}{my2\+Alert\+Dialog}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_affe7979f09447f88b742e0a27f2469a2}{on\+Create} (Bundle saved\+Instance\+State)
+\begin{DoxyCompactList}\small\item\em on\+Create Method for setting up Listview Events \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a656f84d86a0cf1302ac1961f241fcefe}{on\+Pause} ()
+\begin{DoxyCompactList}\small\item\em on\+Pause method to pause the sensor\+Manager \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a03da83dbc50946c4de153f3f8ccb20d5}{on\+Destroy} ()
+\begin{DoxyCompactList}\small\item\em on\+Destroy Method . \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a7d54b1d68cbd82fb0468b4401e0730bd}{on\+Resume} ()
+\begin{DoxyCompactList}\small\item\em on\+Resume Method for resuming the sensor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ae837f52436477b84e95460db4cc00cec}{R\+E\+S\+U\+L\+T\+\_\+\+S\+P\+E\+E\+CH} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+List Activity Class is used to represent all items with their respective information and performs delete operation of item and cross over. 
+
+It defines the List view on click listener and Long click Listener to perform edit and delete respectively 
+
+\subsection{Member Function Documentation}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!Add\+Item@{Add\+Item}}
+\index{Add\+Item@{Add\+Item}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{Add\+Item(\+View v)}{AddItem(View v)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+Add\+Item (
+\begin{DoxyParamCaption}
+\item[{View}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3aa761782d9eb5c28ec21734e407970d}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3aa761782d9eb5c28ec21734e407970d}
+
+
+Add Item rediretcs to Item activity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & \\
+\hline
+\end{DoxyParams}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!Deletedialog@{Deletedialog}}
+\index{Deletedialog@{Deletedialog}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{Deletedialog()}{Deletedialog()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+Deletedialog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ac120c9e11a30ad182b0c2e146bbc420a}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ac120c9e11a30ad182b0c2e146bbc420a}
+
+
+Delete all Items in the List. 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!display\+Data\+Custom@{display\+Data\+Custom}}
+\index{display\+Data\+Custom@{display\+Data\+Custom}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{display\+Data\+Custom()}{displayDataCustom()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+display\+Data\+Custom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3e5d96fe6cb761f9b036c552a5078406}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3e5d96fe6cb761f9b036c552a5078406}
+
+
+Send Data to \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_my_custom_adapter}{My\+Custom\+Adapter}. 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!get\+Price@{get\+Price}}
+\index{get\+Price@{get\+Price}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{get\+Price()}{getPrice()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+get\+Price (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ae309a9528aeacc4614e63dd6946bbdfe}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ae309a9528aeacc4614e63dd6946bbdfe}
+
+
+Show the price of List. 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!is\+Online@{is\+Online}}
+\index{is\+Online@{is\+Online}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{is\+Online()}{isOnline()}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+is\+Online (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a1a93b6350edb03460299def603c57a44}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a1a93b6350edb03460299def603c57a44}
+
+
+Determines if the device is internet able. 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!is\+Valid\+Email@{is\+Valid\+Email}}
+\index{is\+Valid\+Email@{is\+Valid\+Email}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{is\+Valid\+Email(\+Char\+Sequence target)}{isValidEmail(CharSequence target)}}]{\setlength{\rightskip}{0pt plus 5cm}static final boolean com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+is\+Valid\+Email (
+\begin{DoxyParamCaption}
+\item[{Char\+Sequence}]{target}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a67c3e8b285551793d2095968b583c92e}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a67c3e8b285551793d2095968b583c92e}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Accuracy\+Changed@{on\+Accuracy\+Changed}}
+\index{on\+Accuracy\+Changed@{on\+Accuracy\+Changed}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Accuracy\+Changed(\+Sensor sensor, int accuracy)}{onAccuracyChanged(Sensor sensor, int accuracy)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Accuracy\+Changed (
+\begin{DoxyParamCaption}
+\item[{Sensor}]{sensor, }
+\item[{int}]{accuracy}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ad2d33376b6c33875d85c9250077c7f0a}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ad2d33376b6c33875d85c9250077c7f0a}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Back\+Pressed@{on\+Back\+Pressed}}
+\index{on\+Back\+Pressed@{on\+Back\+Pressed}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Back\+Pressed()}{onBackPressed()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Back\+Pressed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a5941058d8bb35fffa810cdc1bc7cb78b}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a5941058d8bb35fffa810cdc1bc7cb78b}
+
+
+Back Pressed method. 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Create@{on\+Create}}
+\index{on\+Create@{on\+Create}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Create(\+Bundle saved\+Instance\+State)}{onCreate(Bundle savedInstanceState)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Create (
+\begin{DoxyParamCaption}
+\item[{Bundle}]{saved\+Instance\+State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_affe7979f09447f88b742e0a27f2469a2}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_affe7979f09447f88b742e0a27f2469a2}
+
+
+on\+Create Method for setting up Listview Events 
+
+
+\begin{DoxyParams}{Parameters}
+{\em saved\+Instance\+State} & \\
+\hline
+\end{DoxyParams}
+on\+Touch Listview to enable Scroll
+
+onitem\+Click to strike off given item
+
+On\+Item\+Long\+Click to Edit or Deelte an item\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Create\+Options\+Menu@{on\+Create\+Options\+Menu}}
+\index{on\+Create\+Options\+Menu@{on\+Create\+Options\+Menu}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Create\+Options\+Menu(\+Menu menu)}{onCreateOptionsMenu(Menu menu)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Create\+Options\+Menu (
+\begin{DoxyParamCaption}
+\item[{Menu}]{menu}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a89a36a191d70c8b9d07db5eda2e804e4}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a89a36a191d70c8b9d07db5eda2e804e4}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Destroy@{on\+Destroy}}
+\index{on\+Destroy@{on\+Destroy}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Destroy()}{onDestroy()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Destroy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a03da83dbc50946c4de153f3f8ccb20d5}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a03da83dbc50946c4de153f3f8ccb20d5}
+
+
+on\+Destroy Method . 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Options\+Item\+Selected@{on\+Options\+Item\+Selected}}
+\index{on\+Options\+Item\+Selected@{on\+Options\+Item\+Selected}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Options\+Item\+Selected(\+Menu\+Item item)}{onOptionsItemSelected(MenuItem item)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Options\+Item\+Selected (
+\begin{DoxyParamCaption}
+\item[{Menu\+Item}]{item}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a07f94ec03899822148ce095082318cdb}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a07f94ec03899822148ce095082318cdb}
+
+
+Performs necessary function on clicking respective Menu Item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Pause@{on\+Pause}}
+\index{on\+Pause@{on\+Pause}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Pause()}{onPause()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Pause (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a656f84d86a0cf1302ac1961f241fcefe}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a656f84d86a0cf1302ac1961f241fcefe}
+
+
+on\+Pause method to pause the sensor\+Manager 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Refresh@{on\+Refresh}}
+\index{on\+Refresh@{on\+Refresh}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Refresh()}{onRefresh()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Refresh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_aeb713dae9574328c1179a3a1fe298365}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_aeb713dae9574328c1179a3a1fe298365}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Resume@{on\+Resume}}
+\index{on\+Resume@{on\+Resume}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Resume()}{onResume()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Resume (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a7d54b1d68cbd82fb0468b4401e0730bd}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a7d54b1d68cbd82fb0468b4401e0730bd}
+
+
+on\+Resume Method for resuming the sensor 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Sensor\+Change@{on\+Sensor\+Change}}
+\index{on\+Sensor\+Change@{on\+Sensor\+Change}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Sensor\+Change(\+Sensor\+Event sensor\+Event)}{onSensorChange(SensorEvent sensorEvent)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Sensor\+Change (
+\begin{DoxyParamCaption}
+\item[{Sensor\+Event}]{sensor\+Event}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ab9ad7fc938dbd932094363fc1e56eac9}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ab9ad7fc938dbd932094363fc1e56eac9}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!on\+Sensor\+Changed@{on\+Sensor\+Changed}}
+\index{on\+Sensor\+Changed@{on\+Sensor\+Changed}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Sensor\+Changed(\+Sensor\+Event event)}{onSensorChanged(SensorEvent event)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+on\+Sensor\+Changed (
+\begin{DoxyParamCaption}
+\item[{Sensor\+Event}]{event}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3fe70255c4756fc99021e0ed27683548}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a3fe70255c4756fc99021e0ed27683548}
+
+
+on detecting Shake Delete all Items in the List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!Sync\+Items@{Sync\+Items}}
+\index{Sync\+Items@{Sync\+Items}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{Sync\+Items(\+View v)}{SyncItems(View v)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+Sync\+Items (
+\begin{DoxyParamCaption}
+\item[{View}]{v}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a019462edc2e1d011fe110720b294fe41}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a019462edc2e1d011fe110720b294fe41}
+
+
+\subsection{Member Data Documentation}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!my2\+Alert\+Dialog@{my2\+Alert\+Dialog}}
+\index{my2\+Alert\+Dialog@{my2\+Alert\+Dialog}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{my2\+Alert\+Dialog}{my2AlertDialog}}]{\setlength{\rightskip}{0pt plus 5cm}Alert\+Dialog com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+my2\+Alert\+Dialog}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ad19898c97695f5a48727227122c055dd}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ad19898c97695f5a48727227122c055dd}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!my\+Alert\+Dialog@{my\+Alert\+Dialog}}
+\index{my\+Alert\+Dialog@{my\+Alert\+Dialog}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{my\+Alert\+Dialog}{myAlertDialog}}]{\setlength{\rightskip}{0pt plus 5cm}Alert\+Dialog com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+my\+Alert\+Dialog}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a10f069d18425057cd9c3c13a3a1ab011}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_a10f069d18425057cd9c3c13a3a1ab011}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}!R\+E\+S\+U\+L\+T\+\_\+\+S\+P\+E\+E\+CH@{R\+E\+S\+U\+L\+T\+\_\+\+S\+P\+E\+E\+CH}}
+\index{R\+E\+S\+U\+L\+T\+\_\+\+S\+P\+E\+E\+CH@{R\+E\+S\+U\+L\+T\+\_\+\+S\+P\+E\+E\+CH}!com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity@{com\+::example\+::santh\+::shoppinglist\+::\+List\+Activity}}
+\subsubsection[{\texorpdfstring{R\+E\+S\+U\+L\+T\+\_\+\+S\+P\+E\+E\+CH}{RESULT_SPEECH}}]{\setlength{\rightskip}{0pt plus 5cm}final int com.\+example.\+santh.\+shoppinglist.\+List\+Activity.\+R\+E\+S\+U\+L\+T\+\_\+\+S\+P\+E\+E\+CH = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ae837f52436477b84e95460db4cc00cec}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity_ae837f52436477b84e95460db4cc00cec}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Android/\+Shopping\+List\+D\+B4 2/app/src/main/java/com/example/santh/shoppinglist/\hyperlink{_list_activity_8java}{List\+Activity.\+java}\end{DoxyCompactItemize}

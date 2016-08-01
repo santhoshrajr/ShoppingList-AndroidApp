@@ -1,0 +1,1027 @@
+\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager}{}\section{com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager Class Reference}
+\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager}\index{com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager@{com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager}}
+
+
+\hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager}{Data\+Base\+Manager} class file to edit delete update and query the database.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a794167dc3d55c445b8e0f96a50a2f570}{Data\+Base\+Manager} (Context ctx)
+\item 
+\hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager}{Data\+Base\+Manager} \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a15cb7f87bbd79a28317ec8079cad963c}{open} ()  throws S\+Q\+L\+Exception 
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af981f3e0544fdd6ea19850a0726fbc16}{close} ()
+\item 
+String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a57ca116807f9a1712924ff51b5c524b7}{get\+Update} ()
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a162a3013d5e24320bbcecda77245ab64}{increment\+Update} ()
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afe09b80b8a6f0caa804c329738b39163}{add\+Items} (String id, String\mbox{[}$\,$\mbox{]} values)
+\item 
+J\+S\+O\+N\+Array \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a906eed7209379bd1829f268a99c38f21}{compose\+Item\+J\+S\+O\+Nfrom\+S\+Q\+Lite} ()
+\begin{DoxyCompactList}\small\item\em Compose J\+S\+ON out of S\+Q\+Lite records. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a2906a3cfcc6af2afa4d0448ef15b3b1c}{get\+Item\+Sync\+Status} ()
+\begin{DoxyCompactList}\small\item\em Get Sync status of S\+Q\+Lite. \end{DoxyCompactList}\item 
+int \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ace7f807903efc4baedf52d82144a6999}{db\+Item\+Sync\+Count} ()
+\begin{DoxyCompactList}\small\item\em Get S\+Q\+Lite records that are yet to be Synced. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3889f14556813bab328222f9c8831446}{updateitem\+Sync\+Status} ()
+\begin{DoxyCompactList}\small\item\em Update Sync status against each User ID. \end{DoxyCompactList}\item 
+J\+S\+O\+N\+Array \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aaf8610923f0af477c21e8d9fcc8fc17d}{compose\+List\+J\+S\+O\+Nfrom\+S\+Q\+Lite} ()
+\begin{DoxyCompactList}\small\item\em Compose J\+S\+ON out of S\+Q\+Lite records. \end{DoxyCompactList}\item 
+String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a0a5bc82b127a787eac73dbd6227bdb11}{get\+Sync\+Status} ()
+\begin{DoxyCompactList}\small\item\em Get Sync status of S\+Q\+Lite. \end{DoxyCompactList}\item 
+int \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4c35804ddfcd4f4308c26329f7d0bfeb}{db\+Sync\+Count} ()
+\begin{DoxyCompactList}\small\item\em Get S\+Q\+Lite records that are yet to be Synced. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6ce5935808f974585790c32b68a0da2f}{updatelist\+Sync\+Status} ()
+\begin{DoxyCompactList}\small\item\em Update Sync status against each User ID. \end{DoxyCompactList}\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a5d8ff9c9206acc5cc8aa5b16919a612b}{addcategories} (String id, String\mbox{[}$\,$\mbox{]} values)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a48833dce90f84310f3aefc22d15d7901}{addunits} (String id, String\mbox{[}$\,$\mbox{]} values)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a1c523a8b86965b84704dd916910890d0}{get\+Price} (int ID)
+\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a471dab48ad6de705ae874d0b22335de3}{Update\+Data\+Item} (String Item\+Name, int List\+ID, int unitid, int categoryid, String Comments, float Quantity, float Price, int id)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae539ad8cc244d4da2b60f23d1601b42e}{add\+List} (String id, String\mbox{[}$\,$\mbox{]} values)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ab5aaf1da6ce563dcc4ce4e7f63bc58de}{deletelistid} (String id)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a1e0bad58bdfe608855e3785f82c38d46}{deletecategoryid} (String id)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a987e069d2da99af080009eae9bed0cbe}{deleteunitid} (String id)
+\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a69d01cf1de4f01774078111e0eaef829}{insert\+Data\+List} (String List\+Name)
+\begin{DoxyCompactList}\small\item\em Insert Function to insert values into table List. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afb695f603f9d2f7e58c3746e535358ec}{share\+Listdata} (int List\+Id)
+\begin{DoxyCompactList}\small\item\em get all the items and qunatitites to share the list through whatsapp and Email \end{DoxyCompactList}\item 
+List$<$ String $>$ \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a307e4d523baab740e4e01178d6bd5118}{read} (String Search\+Term)
+\begin{DoxyCompactList}\small\item\em Method to get the product suggestions on text changed. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae97008248a1324d0eaf6451ac238acaa}{insert\+Data\+Item} (String Item\+Name, int List\+ID, int unitid, int categoryid, String Comments, float Quantity, float Price, int purchased)
+\begin{DoxyCompactList}\small\item\em insert\+Data\+Item inserts dataitem to List \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_acd3ba4e19bc7373d4a5f8a307d5c8033}{get\+List\+ID} (String List\+Name)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aa0c1294c6cfc190e00ea11cd6ce6e7ab}{get\+Data\+Item} (int ID)
+\begin{DoxyCompactList}\small\item\em Cursor to retrieve data Items. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae4d9ebaa83b3f8503be7b61934bede1b}{get\+Data\+Item\+Cursor} (int ID)
+\begin{DoxyCompactList}\small\item\em Cursor to retrieve data Items. \end{DoxyCompactList}\item 
+int \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aab89b395809febbaf076df571682e57c}{delete\+All} ()
+\begin{DoxyCompactList}\small\item\em Delete all records in table. \end{DoxyCompactList}\item 
+int \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a7273944c8c66bc00f49917270c416b10}{delete\+Items} (int id)
+\begin{DoxyCompactList}\small\item\em Delete all items in the List. \end{DoxyCompactList}\item 
+int \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a74cfb98b2cca130b443a125cdcbc23f5}{delete\+Purchased\+Items} (int id)
+\begin{DoxyCompactList}\small\item\em Delete all Purchased Items. \end{DoxyCompactList}\item 
+Integer \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af44b7c8015d708dd893d208d1abd17a9}{delete\+\_\+\+Itemby\+ID} (int id)
+\begin{DoxyCompactList}\small\item\em Delete by ID in Table. \end{DoxyCompactList}\item 
+Integer \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9d3b7935c938547342a5901f7b36f525}{delete\+\_\+\+Listby\+ID} (int id)
+\begin{DoxyCompactList}\small\item\em Delete List by ID. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a68c423e2ef83ec63f0836f62637794fe}{updatedata} (String itemname, String original)
+\begin{DoxyCompactList}\small\item\em Update Item\+Name in Database. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a0d54793ae4494224e8c80bb69dd03ae1}{update\+Listdata} (String itemname, String original)
+\begin{DoxyCompactList}\small\item\em Update List Name. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_acc9756c58ed8994133dff1241a62f896}{update\+Item\+Purchased} (int id1)
+\begin{DoxyCompactList}\small\item\em Update Item as Purchased. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a14844033da2d6593a848a377a21d96a3}{update\+Item\+Not\+Purchased} (int id1)
+\begin{DoxyCompactList}\small\item\em Update Item as Not purchased. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a22a3d9161c068013b59434ce07511985}{sortdata} (int Id)
+\begin{DoxyCompactList}\small\item\em Sort\+Data to arrange items in list. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9b0d6f7aeea8ec2126210a3ab0f15bad}{sortcategory} (int Id)
+\begin{DoxyCompactList}\small\item\em Sort Items By Category. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afdb5f5c276c4111164a9c261d040a64d}{sortshowall} (int Id)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aabf476fd3269890f86e97eb7948c95c4}{sortshow010} (int Id)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_abbf59fb07c43e403b0a231d9be6f6ad4}{sortshow100} (int Id)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a26442de7ea4e3da9f5a57fb1005b063b}{sortshow110} (int Id)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a968efcc4a15cd2582dbb46253c67fa96}{strikeallitems} (int id)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6097146d423c0c705e7405c542b17783}{unstrikeallitems} (int id)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3b63b54bc23f0a06749e710cde064995}{sortcategorydata} (int Id)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac00576993fafdc4d77e7794a351d7365}{sort\+Lists} ()
+\begin{DoxyCompactList}\small\item\em Sort Lists Alphabetically. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a7a587023ac7dcef1569da63b6cbf4d66}{sort\+Lists\+Price} ()
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae1cac16a081cbd3ed3fc0dded7c3d306}{sort\+Lists\+Price\+Alpha} ()
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a34cecc0ce7f84fe53cddad15284a892b}{get\+Purchased\+List} (int id)
+\begin{DoxyCompactList}\small\item\em Get Count of items Purchased in the List. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae9646927170d242e1727f5be44778b04}{get\+Un\+Purchased\+List} (int id)
+\begin{DoxyCompactList}\small\item\em Get Count of Items which are not Yet Purchased. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a84ee149222f9b8c6aeff90904db86df8}{checkdata} (String item\+Name, int id)
+\begin{DoxyCompactList}\small\item\em Check\+If\+Dataitem Exists. \end{DoxyCompactList}\item 
+boolean \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a56a7c1db72d0a27b31bd26facae87bc0}{check\+Listdata} (String item\+Name)
+\begin{DoxyCompactList}\small\item\em Check if a List Name Exists. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a481240bf420f4e57240eee75c396f034}{get\+Lists} ()
+\begin{DoxyCompactList}\small\item\em get all List Names \end{DoxyCompactList}\item 
+List$<$ String $>$ \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ad88a038d25f0248937118787296a76ba}{get\+Units} ()
+\begin{DoxyCompactList}\small\item\em Get all Units. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_abdc53399fddf45780c6982c500a87cb2}{getunitname} (int unitid)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a42642480f4b6994d40939638eb9348e8}{getcategoryname} (int categoryid)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a24c43da6384cbe3a244f30d9583011fa}{getunitid} (String unitname)
+\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a85b785ca8012c85c5fc1ccb548b361fd}{getcategoryid} (String categoryname)
+\item 
+List$<$ String $>$ \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3e0f1f4eeebc8f8fa50fd3a978b3ec21}{get\+Category} ()
+\begin{DoxyCompactList}\small\item\em Get all categories. \end{DoxyCompactList}\item 
+Cursor \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a53d1ac0f496bbb3e4e7f8ff35ff6f159}{get\+Item\+Details} (int ID)
+\begin{DoxyCompactList}\small\item\em Get all Item Details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a390eab428a5fa43c2a986cc0396800dc}{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+V\+E\+R\+S\+I\+ON} = 1
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a715ae8e63c4b8b71d5ee7f84624457b6}{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME} = \char`\"{}Shopping\+List.\+db\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4baaaa98454321bf218711bd5c716dfb}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+ST} = \char`\"{}List\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6001c0b58adbe34cf48abe6c06ee2704}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+IT} = \char`\"{}Unit\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a93a7ddc84d39f7aacf052122683e8dcf}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+RY} = \char`\"{}Category\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_adef1e883e70f7425117fade0cf0e95c0}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+ID} = \char`\"{}listid\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac4fd55b0cb41d7cd67ec2e77d916336c}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+N\+A\+ME} = \char`\"{}listname\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a76d9454b49ce6a5f120990df1e0a4338}{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+EM} = \char`\"{}Item\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9e8a8e983956f2de8440c37a7a6b378a}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+\_\+\+ID} = \char`\"{}itemid\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9b6b0327269905ec57c1be48ed26d5ce}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+N\+A\+ME} = \char`\"{}itemname\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af428b95655be5d8e1f16a976277407ad}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+\_\+\+ID} = \char`\"{}unitid\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac7cedd9d2e7b05b06ca415d92c95ed44}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Q\+U\+A\+N\+T\+I\+TY} = \char`\"{}quantity\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4cc6778021432214d608946fa372692d}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+M\+M\+E\+N\+TS} = \char`\"{}comments\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4fb5be00264c2cfd95471bfcbf4622dd}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+ID} = \char`\"{}category\+\_\+id\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9f0c4da11beb1c950b1ebb5f36508409}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+N\+A\+ME} = \char`\"{}unitname\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4f556bf24057f251709c76b4b7c57459}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+N\+A\+ME} = \char`\"{}categoryname\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9f3ac8fb53568e965aee644e520989c8}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Price} = \char`\"{}price\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae885ba4bb592938e34c718f282743384}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Purchased} =\char`\"{}purchased\char`\"{}
+\item 
+static final String \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a50114b228e86c9deec8918f193faf6f0}{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+D\+A\+TE} =\char`\"{}date\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager}{Data\+Base\+Manager} class file to edit delete update and query the database. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!Data\+Base\+Manager@{Data\+Base\+Manager}}
+\index{Data\+Base\+Manager@{Data\+Base\+Manager}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{Data\+Base\+Manager(\+Context ctx)}{DataBaseManager(Context ctx)}}]{\setlength{\rightskip}{0pt plus 5cm}com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+Data\+Base\+Manager (
+\begin{DoxyParamCaption}
+\item[{Context}]{ctx}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a794167dc3d55c445b8e0f96a50a2f570}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a794167dc3d55c445b8e0f96a50a2f570}
+
+
+\subsection{Member Function Documentation}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!addcategories@{addcategories}}
+\index{addcategories@{addcategories}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{addcategories(\+String id, String[] values)}{addcategories(String id, String[] values)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+addcategories (
+\begin{DoxyParamCaption}
+\item[{String}]{id, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{values}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a5d8ff9c9206acc5cc8aa5b16919a612b}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a5d8ff9c9206acc5cc8aa5b16919a612b}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!add\+Items@{add\+Items}}
+\index{add\+Items@{add\+Items}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Items(\+String id, String[] values)}{addItems(String id, String[] values)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+add\+Items (
+\begin{DoxyParamCaption}
+\item[{String}]{id, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{values}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afe09b80b8a6f0caa804c329738b39163}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afe09b80b8a6f0caa804c329738b39163}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!add\+List@{add\+List}}
+\index{add\+List@{add\+List}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{add\+List(\+String id, String[] values)}{addList(String id, String[] values)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+add\+List (
+\begin{DoxyParamCaption}
+\item[{String}]{id, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{values}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae539ad8cc244d4da2b60f23d1601b42e}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae539ad8cc244d4da2b60f23d1601b42e}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!addunits@{addunits}}
+\index{addunits@{addunits}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{addunits(\+String id, String[] values)}{addunits(String id, String[] values)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+addunits (
+\begin{DoxyParamCaption}
+\item[{String}]{id, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{values}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a48833dce90f84310f3aefc22d15d7901}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a48833dce90f84310f3aefc22d15d7901}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!checkdata@{checkdata}}
+\index{checkdata@{checkdata}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{checkdata(\+String item\+Name, int id)}{checkdata(String itemName, int id)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+checkdata (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Name, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a84ee149222f9b8c6aeff90904db86df8}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a84ee149222f9b8c6aeff90904db86df8}
+
+
+Check\+If\+Dataitem Exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!check\+Listdata@{check\+Listdata}}
+\index{check\+Listdata@{check\+Listdata}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{check\+Listdata(\+String item\+Name)}{checkListdata(String itemName)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+check\+Listdata (
+\begin{DoxyParamCaption}
+\item[{String}]{item\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a56a7c1db72d0a27b31bd26facae87bc0}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a56a7c1db72d0a27b31bd26facae87bc0}
+
+
+Check if a List Name Exists. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!close@{close}}
+\index{close@{close}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{close()}{close()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af981f3e0544fdd6ea19850a0726fbc16}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af981f3e0544fdd6ea19850a0726fbc16}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!compose\+Item\+J\+S\+O\+Nfrom\+S\+Q\+Lite@{compose\+Item\+J\+S\+O\+Nfrom\+S\+Q\+Lite}}
+\index{compose\+Item\+J\+S\+O\+Nfrom\+S\+Q\+Lite@{compose\+Item\+J\+S\+O\+Nfrom\+S\+Q\+Lite}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{compose\+Item\+J\+S\+O\+Nfrom\+S\+Q\+Lite()}{composeItemJSONfromSQLite()}}]{\setlength{\rightskip}{0pt plus 5cm}J\+S\+O\+N\+Array com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+compose\+Item\+J\+S\+O\+Nfrom\+S\+Q\+Lite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a906eed7209379bd1829f268a99c38f21}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a906eed7209379bd1829f268a99c38f21}
+
+
+Compose J\+S\+ON out of S\+Q\+Lite records. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!compose\+List\+J\+S\+O\+Nfrom\+S\+Q\+Lite@{compose\+List\+J\+S\+O\+Nfrom\+S\+Q\+Lite}}
+\index{compose\+List\+J\+S\+O\+Nfrom\+S\+Q\+Lite@{compose\+List\+J\+S\+O\+Nfrom\+S\+Q\+Lite}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{compose\+List\+J\+S\+O\+Nfrom\+S\+Q\+Lite()}{composeListJSONfromSQLite()}}]{\setlength{\rightskip}{0pt plus 5cm}J\+S\+O\+N\+Array com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+compose\+List\+J\+S\+O\+Nfrom\+S\+Q\+Lite (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aaf8610923f0af477c21e8d9fcc8fc17d}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aaf8610923f0af477c21e8d9fcc8fc17d}
+
+
+Compose J\+S\+ON out of S\+Q\+Lite records. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!db\+Item\+Sync\+Count@{db\+Item\+Sync\+Count}}
+\index{db\+Item\+Sync\+Count@{db\+Item\+Sync\+Count}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{db\+Item\+Sync\+Count()}{dbItemSyncCount()}}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+db\+Item\+Sync\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ace7f807903efc4baedf52d82144a6999}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ace7f807903efc4baedf52d82144a6999}
+
+
+Get S\+Q\+Lite records that are yet to be Synced. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!db\+Sync\+Count@{db\+Sync\+Count}}
+\index{db\+Sync\+Count@{db\+Sync\+Count}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{db\+Sync\+Count()}{dbSyncCount()}}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+db\+Sync\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4c35804ddfcd4f4308c26329f7d0bfeb}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4c35804ddfcd4f4308c26329f7d0bfeb}
+
+
+Get S\+Q\+Lite records that are yet to be Synced. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!delete\+\_\+\+Itemby\+ID@{delete\+\_\+\+Itemby\+ID}}
+\index{delete\+\_\+\+Itemby\+ID@{delete\+\_\+\+Itemby\+ID}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{delete\+\_\+\+Itemby\+I\+D(int id)}{delete_ItembyID(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}Integer com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+delete\+\_\+\+Itemby\+ID (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af44b7c8015d708dd893d208d1abd17a9}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af44b7c8015d708dd893d208d1abd17a9}
+
+
+Delete by ID in Table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!delete\+\_\+\+Listby\+ID@{delete\+\_\+\+Listby\+ID}}
+\index{delete\+\_\+\+Listby\+ID@{delete\+\_\+\+Listby\+ID}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{delete\+\_\+\+Listby\+I\+D(int id)}{delete_ListbyID(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}Integer com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+delete\+\_\+\+Listby\+ID (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9d3b7935c938547342a5901f7b36f525}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9d3b7935c938547342a5901f7b36f525}
+
+
+Delete List by ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!delete\+All@{delete\+All}}
+\index{delete\+All@{delete\+All}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{delete\+All()}{deleteAll()}}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+delete\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aab89b395809febbaf076df571682e57c}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aab89b395809febbaf076df571682e57c}
+
+
+Delete all records in table. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!deletecategoryid@{deletecategoryid}}
+\index{deletecategoryid@{deletecategoryid}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{deletecategoryid(\+String id)}{deletecategoryid(String id)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+deletecategoryid (
+\begin{DoxyParamCaption}
+\item[{String}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a1e0bad58bdfe608855e3785f82c38d46}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a1e0bad58bdfe608855e3785f82c38d46}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!delete\+Items@{delete\+Items}}
+\index{delete\+Items@{delete\+Items}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{delete\+Items(int id)}{deleteItems(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+delete\+Items (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a7273944c8c66bc00f49917270c416b10}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a7273944c8c66bc00f49917270c416b10}
+
+
+Delete all items in the List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!deletelistid@{deletelistid}}
+\index{deletelistid@{deletelistid}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{deletelistid(\+String id)}{deletelistid(String id)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+deletelistid (
+\begin{DoxyParamCaption}
+\item[{String}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ab5aaf1da6ce563dcc4ce4e7f63bc58de}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ab5aaf1da6ce563dcc4ce4e7f63bc58de}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!delete\+Purchased\+Items@{delete\+Purchased\+Items}}
+\index{delete\+Purchased\+Items@{delete\+Purchased\+Items}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{delete\+Purchased\+Items(int id)}{deletePurchasedItems(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}int com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+delete\+Purchased\+Items (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a74cfb98b2cca130b443a125cdcbc23f5}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a74cfb98b2cca130b443a125cdcbc23f5}
+
+
+Delete all Purchased Items. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!deleteunitid@{deleteunitid}}
+\index{deleteunitid@{deleteunitid}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{deleteunitid(\+String id)}{deleteunitid(String id)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+deleteunitid (
+\begin{DoxyParamCaption}
+\item[{String}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a987e069d2da99af080009eae9bed0cbe}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a987e069d2da99af080009eae9bed0cbe}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Category@{get\+Category}}
+\index{get\+Category@{get\+Category}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Category()}{getCategory()}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Category (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3e0f1f4eeebc8f8fa50fd3a978b3ec21}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3e0f1f4eeebc8f8fa50fd3a978b3ec21}
+
+
+Get all categories. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!getcategoryid@{getcategoryid}}
+\index{getcategoryid@{getcategoryid}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{getcategoryid(\+String categoryname)}{getcategoryid(String categoryname)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+getcategoryid (
+\begin{DoxyParamCaption}
+\item[{String}]{categoryname}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a85b785ca8012c85c5fc1ccb548b361fd}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a85b785ca8012c85c5fc1ccb548b361fd}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!getcategoryname@{getcategoryname}}
+\index{getcategoryname@{getcategoryname}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{getcategoryname(int categoryid)}{getcategoryname(int categoryid)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+getcategoryname (
+\begin{DoxyParamCaption}
+\item[{int}]{categoryid}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a42642480f4b6994d40939638eb9348e8}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a42642480f4b6994d40939638eb9348e8}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Data\+Item@{get\+Data\+Item}}
+\index{get\+Data\+Item@{get\+Data\+Item}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Data\+Item(int I\+D)}{getDataItem(int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Data\+Item (
+\begin{DoxyParamCaption}
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aa0c1294c6cfc190e00ea11cd6ce6e7ab}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aa0c1294c6cfc190e00ea11cd6ce6e7ab}
+
+
+Cursor to retrieve data Items. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Data\+Item\+Cursor@{get\+Data\+Item\+Cursor}}
+\index{get\+Data\+Item\+Cursor@{get\+Data\+Item\+Cursor}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Data\+Item\+Cursor(int I\+D)}{getDataItemCursor(int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Data\+Item\+Cursor (
+\begin{DoxyParamCaption}
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae4d9ebaa83b3f8503be7b61934bede1b}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae4d9ebaa83b3f8503be7b61934bede1b}
+
+
+Cursor to retrieve data Items. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Item\+Details@{get\+Item\+Details}}
+\index{get\+Item\+Details@{get\+Item\+Details}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Item\+Details(int I\+D)}{getItemDetails(int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Item\+Details (
+\begin{DoxyParamCaption}
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a53d1ac0f496bbb3e4e7f8ff35ff6f159}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a53d1ac0f496bbb3e4e7f8ff35ff6f159}
+
+
+Get all Item Details. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Item\+Sync\+Status@{get\+Item\+Sync\+Status}}
+\index{get\+Item\+Sync\+Status@{get\+Item\+Sync\+Status}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Item\+Sync\+Status()}{getItemSyncStatus()}}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Item\+Sync\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a2906a3cfcc6af2afa4d0448ef15b3b1c}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a2906a3cfcc6af2afa4d0448ef15b3b1c}
+
+
+Get Sync status of S\+Q\+Lite. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+List\+ID@{get\+List\+ID}}
+\index{get\+List\+ID@{get\+List\+ID}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+List\+I\+D(\+String List\+Name)}{getListID(String ListName)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+List\+ID (
+\begin{DoxyParamCaption}
+\item[{String}]{List\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_acd3ba4e19bc7373d4a5f8a307d5c8033}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_acd3ba4e19bc7373d4a5f8a307d5c8033}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Lists@{get\+Lists}}
+\index{get\+Lists@{get\+Lists}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Lists()}{getLists()}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Lists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a481240bf420f4e57240eee75c396f034}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a481240bf420f4e57240eee75c396f034}
+
+
+get all List Names 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Price@{get\+Price}}
+\index{get\+Price@{get\+Price}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Price(int I\+D)}{getPrice(int ID)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Price (
+\begin{DoxyParamCaption}
+\item[{int}]{ID}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a1c523a8b86965b84704dd916910890d0}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a1c523a8b86965b84704dd916910890d0}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Purchased\+List@{get\+Purchased\+List}}
+\index{get\+Purchased\+List@{get\+Purchased\+List}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Purchased\+List(int id)}{getPurchasedList(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Purchased\+List (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a34cecc0ce7f84fe53cddad15284a892b}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a34cecc0ce7f84fe53cddad15284a892b}
+
+
+Get Count of items Purchased in the List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Sync\+Status@{get\+Sync\+Status}}
+\index{get\+Sync\+Status@{get\+Sync\+Status}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Sync\+Status()}{getSyncStatus()}}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Sync\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a0a5bc82b127a787eac73dbd6227bdb11}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a0a5bc82b127a787eac73dbd6227bdb11}
+
+
+Get Sync status of S\+Q\+Lite. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!getunitid@{getunitid}}
+\index{getunitid@{getunitid}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{getunitid(\+String unitname)}{getunitid(String unitname)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+getunitid (
+\begin{DoxyParamCaption}
+\item[{String}]{unitname}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a24c43da6384cbe3a244f30d9583011fa}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a24c43da6384cbe3a244f30d9583011fa}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!getunitname@{getunitname}}
+\index{getunitname@{getunitname}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{getunitname(int unitid)}{getunitname(int unitid)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+getunitname (
+\begin{DoxyParamCaption}
+\item[{int}]{unitid}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_abdc53399fddf45780c6982c500a87cb2}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_abdc53399fddf45780c6982c500a87cb2}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Units@{get\+Units}}
+\index{get\+Units@{get\+Units}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Units()}{getUnits()}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Units (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ad88a038d25f0248937118787296a76ba}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ad88a038d25f0248937118787296a76ba}
+
+
+Get all Units. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Un\+Purchased\+List@{get\+Un\+Purchased\+List}}
+\index{get\+Un\+Purchased\+List@{get\+Un\+Purchased\+List}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Un\+Purchased\+List(int id)}{getUnPurchasedList(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Un\+Purchased\+List (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae9646927170d242e1727f5be44778b04}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae9646927170d242e1727f5be44778b04}
+
+
+Get Count of Items which are not Yet Purchased. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!get\+Update@{get\+Update}}
+\index{get\+Update@{get\+Update}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Update()}{getUpdate()}}]{\setlength{\rightskip}{0pt plus 5cm}String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+get\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a57ca116807f9a1712924ff51b5c524b7}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a57ca116807f9a1712924ff51b5c524b7}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!increment\+Update@{increment\+Update}}
+\index{increment\+Update@{increment\+Update}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{increment\+Update()}{incrementUpdate()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+increment\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a162a3013d5e24320bbcecda77245ab64}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a162a3013d5e24320bbcecda77245ab64}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!insert\+Data\+Item@{insert\+Data\+Item}}
+\index{insert\+Data\+Item@{insert\+Data\+Item}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{insert\+Data\+Item(\+String Item\+Name, int List\+I\+D, int unitid, int categoryid, String Comments, float Quantity, float Price, int purchased)}{insertDataItem(String ItemName, int ListID, int unitid, int categoryid, String Comments, float Quantity, float Price, int purchased)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+insert\+Data\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{Item\+Name, }
+\item[{int}]{List\+ID, }
+\item[{int}]{unitid, }
+\item[{int}]{categoryid, }
+\item[{String}]{Comments, }
+\item[{float}]{Quantity, }
+\item[{float}]{Price, }
+\item[{int}]{purchased}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae97008248a1324d0eaf6451ac238acaa}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae97008248a1324d0eaf6451ac238acaa}
+
+
+insert\+Data\+Item inserts dataitem to List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Item\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!insert\+Data\+List@{insert\+Data\+List}}
+\index{insert\+Data\+List@{insert\+Data\+List}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{insert\+Data\+List(\+String List\+Name)}{insertDataList(String ListName)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+insert\+Data\+List (
+\begin{DoxyParamCaption}
+\item[{String}]{List\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a69d01cf1de4f01774078111e0eaef829}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a69d01cf1de4f01774078111e0eaef829}
+
+
+Insert Function to insert values into table List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!open@{open}}
+\index{open@{open}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{open()}{open()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Data\+Base\+Manager} com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws S\+Q\+L\+Exception}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a15cb7f87bbd79a28317ec8079cad963c}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a15cb7f87bbd79a28317ec8079cad963c}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!read@{read}}
+\index{read@{read}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{read(\+String Search\+Term)}{read(String SearchTerm)}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$String$>$ com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+read (
+\begin{DoxyParamCaption}
+\item[{String}]{Search\+Term}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a307e4d523baab740e4e01178d6bd5118}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a307e4d523baab740e4e01178d6bd5118}
+
+
+Method to get the product suggestions on text changed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Search\+Term} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!share\+Listdata@{share\+Listdata}}
+\index{share\+Listdata@{share\+Listdata}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{share\+Listdata(int List\+Id)}{shareListdata(int ListId)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+share\+Listdata (
+\begin{DoxyParamCaption}
+\item[{int}]{List\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afb695f603f9d2f7e58c3746e535358ec}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afb695f603f9d2f7e58c3746e535358ec}
+
+
+get all the items and qunatitites to share the list through whatsapp and Email 
+
+
+\begin{DoxyParams}{Parameters}
+{\em List\+Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sortcategory@{sortcategory}}
+\index{sortcategory@{sortcategory}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sortcategory(int Id)}{sortcategory(int Id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sortcategory (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9b0d6f7aeea8ec2126210a3ab0f15bad}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9b0d6f7aeea8ec2126210a3ab0f15bad}
+
+
+Sort Items By Category. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sortcategorydata@{sortcategorydata}}
+\index{sortcategorydata@{sortcategorydata}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sortcategorydata(int Id)}{sortcategorydata(int Id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sortcategorydata (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3b63b54bc23f0a06749e710cde064995}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3b63b54bc23f0a06749e710cde064995}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sortdata@{sortdata}}
+\index{sortdata@{sortdata}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sortdata(int Id)}{sortdata(int Id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sortdata (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a22a3d9161c068013b59434ce07511985}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a22a3d9161c068013b59434ce07511985}
+
+
+Sort\+Data to arrange items in list. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sort\+Lists@{sort\+Lists}}
+\index{sort\+Lists@{sort\+Lists}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sort\+Lists()}{sortLists()}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sort\+Lists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac00576993fafdc4d77e7794a351d7365}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac00576993fafdc4d77e7794a351d7365}
+
+
+Sort Lists Alphabetically. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sort\+Lists\+Price@{sort\+Lists\+Price}}
+\index{sort\+Lists\+Price@{sort\+Lists\+Price}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sort\+Lists\+Price()}{sortListsPrice()}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sort\+Lists\+Price (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a7a587023ac7dcef1569da63b6cbf4d66}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a7a587023ac7dcef1569da63b6cbf4d66}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sort\+Lists\+Price\+Alpha@{sort\+Lists\+Price\+Alpha}}
+\index{sort\+Lists\+Price\+Alpha@{sort\+Lists\+Price\+Alpha}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sort\+Lists\+Price\+Alpha()}{sortListsPriceAlpha()}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sort\+Lists\+Price\+Alpha (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae1cac16a081cbd3ed3fc0dded7c3d306}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae1cac16a081cbd3ed3fc0dded7c3d306}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sortshow010@{sortshow010}}
+\index{sortshow010@{sortshow010}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sortshow010(int Id)}{sortshow010(int Id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sortshow010 (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aabf476fd3269890f86e97eb7948c95c4}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_aabf476fd3269890f86e97eb7948c95c4}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sortshow100@{sortshow100}}
+\index{sortshow100@{sortshow100}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sortshow100(int Id)}{sortshow100(int Id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sortshow100 (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_abbf59fb07c43e403b0a231d9be6f6ad4}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_abbf59fb07c43e403b0a231d9be6f6ad4}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sortshow110@{sortshow110}}
+\index{sortshow110@{sortshow110}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sortshow110(int Id)}{sortshow110(int Id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sortshow110 (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a26442de7ea4e3da9f5a57fb1005b063b}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a26442de7ea4e3da9f5a57fb1005b063b}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!sortshowall@{sortshowall}}
+\index{sortshowall@{sortshowall}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{sortshowall(int Id)}{sortshowall(int Id)}}]{\setlength{\rightskip}{0pt plus 5cm}Cursor com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+sortshowall (
+\begin{DoxyParamCaption}
+\item[{int}]{Id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afdb5f5c276c4111164a9c261d040a64d}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_afdb5f5c276c4111164a9c261d040a64d}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!strikeallitems@{strikeallitems}}
+\index{strikeallitems@{strikeallitems}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{strikeallitems(int id)}{strikeallitems(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+strikeallitems (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a968efcc4a15cd2582dbb46253c67fa96}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a968efcc4a15cd2582dbb46253c67fa96}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!unstrikeallitems@{unstrikeallitems}}
+\index{unstrikeallitems@{unstrikeallitems}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{unstrikeallitems(int id)}{unstrikeallitems(int id)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+unstrikeallitems (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6097146d423c0c705e7405c542b17783}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6097146d423c0c705e7405c542b17783}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!updatedata@{updatedata}}
+\index{updatedata@{updatedata}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{updatedata(\+String itemname, String original)}{updatedata(String itemname, String original)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+updatedata (
+\begin{DoxyParamCaption}
+\item[{String}]{itemname, }
+\item[{String}]{original}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a68c423e2ef83ec63f0836f62637794fe}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a68c423e2ef83ec63f0836f62637794fe}
+
+
+Update Item\+Name in Database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em itemname} & \\
+\hline
+{\em original} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!Update\+Data\+Item@{Update\+Data\+Item}}
+\index{Update\+Data\+Item@{Update\+Data\+Item}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{Update\+Data\+Item(\+String Item\+Name, int List\+I\+D, int unitid, int categoryid, String Comments, float Quantity, float Price, int id)}{UpdateDataItem(String ItemName, int ListID, int unitid, int categoryid, String Comments, float Quantity, float Price, int id)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+Update\+Data\+Item (
+\begin{DoxyParamCaption}
+\item[{String}]{Item\+Name, }
+\item[{int}]{List\+ID, }
+\item[{int}]{unitid, }
+\item[{int}]{categoryid, }
+\item[{String}]{Comments, }
+\item[{float}]{Quantity, }
+\item[{float}]{Price, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a471dab48ad6de705ae874d0b22335de3}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a471dab48ad6de705ae874d0b22335de3}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!update\+Item\+Not\+Purchased@{update\+Item\+Not\+Purchased}}
+\index{update\+Item\+Not\+Purchased@{update\+Item\+Not\+Purchased}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{update\+Item\+Not\+Purchased(int id1)}{updateItemNotPurchased(int id1)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+update\+Item\+Not\+Purchased (
+\begin{DoxyParamCaption}
+\item[{int}]{id1}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a14844033da2d6593a848a377a21d96a3}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a14844033da2d6593a848a377a21d96a3}
+
+
+Update Item as Not purchased. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id1} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!update\+Item\+Purchased@{update\+Item\+Purchased}}
+\index{update\+Item\+Purchased@{update\+Item\+Purchased}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{update\+Item\+Purchased(int id1)}{updateItemPurchased(int id1)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+update\+Item\+Purchased (
+\begin{DoxyParamCaption}
+\item[{int}]{id1}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_acc9756c58ed8994133dff1241a62f896}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_acc9756c58ed8994133dff1241a62f896}
+
+
+Update Item as Purchased. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id1} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!updateitem\+Sync\+Status@{updateitem\+Sync\+Status}}
+\index{updateitem\+Sync\+Status@{updateitem\+Sync\+Status}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{updateitem\+Sync\+Status()}{updateitemSyncStatus()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+updateitem\+Sync\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3889f14556813bab328222f9c8831446}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a3889f14556813bab328222f9c8831446}
+
+
+Update Sync status against each User ID. 
+
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!update\+Listdata@{update\+Listdata}}
+\index{update\+Listdata@{update\+Listdata}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{update\+Listdata(\+String itemname, String original)}{updateListdata(String itemname, String original)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+update\+Listdata (
+\begin{DoxyParamCaption}
+\item[{String}]{itemname, }
+\item[{String}]{original}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a0d54793ae4494224e8c80bb69dd03ae1}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a0d54793ae4494224e8c80bb69dd03ae1}
+
+
+Update List Name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em itemname} & \\
+\hline
+{\em original} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!updatelist\+Sync\+Status@{updatelist\+Sync\+Status}}
+\index{updatelist\+Sync\+Status@{updatelist\+Sync\+Status}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{updatelist\+Sync\+Status()}{updatelistSyncStatus()}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+updatelist\+Sync\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6ce5935808f974585790c32b68a0da2f}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6ce5935808f974585790c32b68a0da2f}
+
+
+Update Sync status against each User ID. 
+
+
+
+\subsection{Member Data Documentation}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+ID@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+ID}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+ID@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+ID}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+ID}{COLUMN_NAME_CATEGORY_ID}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+\_\+\+ID = \char`\"{}category\+\_\+id\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4fb5be00264c2cfd95471bfcbf4622dd}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4fb5be00264c2cfd95471bfcbf4622dd}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+N\+A\+ME@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+N\+A\+ME}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+N\+A\+ME@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+N\+A\+ME}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+N\+A\+ME}{COLUMN_NAME_CATEGORYNAME}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+R\+Y\+N\+A\+ME = \char`\"{}categoryname\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4f556bf24057f251709c76b4b7c57459}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4f556bf24057f251709c76b4b7c57459}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+M\+M\+E\+N\+TS@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+M\+M\+E\+N\+TS}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+M\+M\+E\+N\+TS@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+M\+M\+E\+N\+TS}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+M\+M\+E\+N\+TS}{COLUMN_NAME_COMMENTS}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+C\+O\+M\+M\+E\+N\+TS = \char`\"{}comments\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4cc6778021432214d608946fa372692d}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4cc6778021432214d608946fa372692d}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+D\+A\+TE@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+D\+A\+TE}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+D\+A\+TE@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+D\+A\+TE}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+D\+A\+TE}{COLUMN_NAME_DATE}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+D\+A\+TE =\char`\"{}date\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a50114b228e86c9deec8918f193faf6f0}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a50114b228e86c9deec8918f193faf6f0}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+\_\+\+ID@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+\_\+\+ID}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+\_\+\+ID@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+\_\+\+ID}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+\_\+\+ID}{COLUMN_NAME_ITEM_ID}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+\_\+\+ID = \char`\"{}itemid\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9e8a8e983956f2de8440c37a7a6b378a}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9e8a8e983956f2de8440c37a7a6b378a}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+N\+A\+ME@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+N\+A\+ME}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+N\+A\+ME@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+N\+A\+ME}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+N\+A\+ME}{COLUMN_NAME_ITEMNAME}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+E\+M\+N\+A\+ME = \char`\"{}itemname\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9b6b0327269905ec57c1be48ed26d5ce}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9b6b0327269905ec57c1be48ed26d5ce}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+ID@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+ID}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+ID@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+ID}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+ID}{COLUMN_NAME_LISTID}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+ID = \char`\"{}listid\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_adef1e883e70f7425117fade0cf0e95c0}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_adef1e883e70f7425117fade0cf0e95c0}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+N\+A\+ME@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+N\+A\+ME}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+N\+A\+ME@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+N\+A\+ME}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+N\+A\+ME}{COLUMN_NAME_LISTNAME}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+S\+T\+N\+A\+ME = \char`\"{}listname\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac4fd55b0cb41d7cd67ec2e77d916336c}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac4fd55b0cb41d7cd67ec2e77d916336c}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Price@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Price}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Price@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Price}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Price}{COLUMN_NAME_Price}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Price = \char`\"{}price\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9f3ac8fb53568e965aee644e520989c8}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9f3ac8fb53568e965aee644e520989c8}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Purchased@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Purchased}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Purchased@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Purchased}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Purchased}{COLUMN_NAME_Purchased}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Purchased =\char`\"{}purchased\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae885ba4bb592938e34c718f282743384}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ae885ba4bb592938e34c718f282743384}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Q\+U\+A\+N\+T\+I\+TY@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Q\+U\+A\+N\+T\+I\+TY}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Q\+U\+A\+N\+T\+I\+TY@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Q\+U\+A\+N\+T\+I\+TY}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Q\+U\+A\+N\+T\+I\+TY}{COLUMN_NAME_QUANTITY}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+Q\+U\+A\+N\+T\+I\+TY = \char`\"{}quantity\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac7cedd9d2e7b05b06ca415d92c95ed44}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_ac7cedd9d2e7b05b06ca415d92c95ed44}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+\_\+\+ID@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+\_\+\+ID}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+\_\+\+ID@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+\_\+\+ID}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+\_\+\+ID}{COLUMN_NAME_UNIT_ID}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+\_\+\+ID = \char`\"{}unitid\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af428b95655be5d8e1f16a976277407ad}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_af428b95655be5d8e1f16a976277407ad}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+N\+A\+ME@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+N\+A\+ME}}
+\index{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+N\+A\+ME@{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+N\+A\+ME}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+N\+A\+ME}{COLUMN_NAME_UNITNAME}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+C\+O\+L\+U\+M\+N\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+I\+T\+N\+A\+ME = \char`\"{}unitname\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9f0c4da11beb1c950b1ebb5f36508409}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a9f0c4da11beb1c950b1ebb5f36508409}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME@{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME}}
+\index{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME@{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME}{DATABASE_NAME}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+N\+A\+ME = \char`\"{}Shopping\+List.\+db\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a715ae8e63c4b8b71d5ee7f84624457b6}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a715ae8e63c4b8b71d5ee7f84624457b6}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+V\+E\+R\+S\+I\+ON@{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+V\+E\+R\+S\+I\+ON@{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+V\+E\+R\+S\+I\+ON}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+V\+E\+R\+S\+I\+ON}{DATABASE_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}final int com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+D\+A\+T\+A\+B\+A\+S\+E\+\_\+\+V\+E\+R\+S\+I\+ON = 1\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a390eab428a5fa43c2a986cc0396800dc}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a390eab428a5fa43c2a986cc0396800dc}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+RY}}
+\index{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+RY@{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+RY}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+RY}{TABLE_NAME_CATEGORY}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+C\+A\+T\+E\+G\+O\+RY = \char`\"{}Category\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a93a7ddc84d39f7aacf052122683e8dcf}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a93a7ddc84d39f7aacf052122683e8dcf}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+EM@{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+EM}}
+\index{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+EM@{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+EM}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+EM}{TABLE_NAME_ITEM}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+I\+T\+EM = \char`\"{}Item\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a76d9454b49ce6a5f120990df1e0a4338}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a76d9454b49ce6a5f120990df1e0a4338}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+ST@{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+ST}}
+\index{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+ST@{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+ST}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+ST}{TABLE_NAME_LIST}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+L\+I\+ST = \char`\"{}List\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4baaaa98454321bf218711bd5c716dfb}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a4baaaa98454321bf218711bd5c716dfb}
+\index{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}!T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+IT@{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+IT}}
+\index{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+IT@{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+IT}!com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager@{com\+::example\+::santh\+::shoppinglist\+::\+Data\+Base\+Manager}}
+\subsubsection[{\texorpdfstring{T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+IT}{TABLE_NAME_UNIT}}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\+example.\+santh.\+shoppinglist.\+Data\+Base\+Manager.\+T\+A\+B\+L\+E\+\_\+\+N\+A\+M\+E\+\_\+\+U\+N\+IT = \char`\"{}Unit\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6001c0b58adbe34cf48abe6c06ee2704}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager_a6001c0b58adbe34cf48abe6c06ee2704}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Android/\+Shopping\+List\+D\+B4 2/app/src/main/java/com/example/santh/shoppinglist/\hyperlink{_data_base_manager_8java}{Data\+Base\+Manager.\+java}\end{DoxyCompactItemize}

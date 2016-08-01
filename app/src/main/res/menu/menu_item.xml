@@ -1,0 +1,67 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="my.santh.shopping.shoppinglist.ListActivity">
+   <!-- <item
+        android:id="@+id/addi"
+        android:orderInCategory="100"
+        android:title="Add Item"
+        app:showAsAction="always"
+        android:icon="@drawable/addlistitem"/>-->
+
+    <item
+        android:id="@+id/info"
+        android:orderInCategory="100"
+        android:title="App Info"
+        app:showAsAction="always"
+        android:icon="@drawable/info"/>
+    <item
+        android:id="@+id/DeleteItems"
+        android:orderInCategory="1"
+        android:title="Clear all items"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/DeletePurchasedItems"
+        android:orderInCategory="1"
+        android:title="Clear all Purchased items"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/MarkItems"
+        android:orderInCategory="1"
+        android:title="Mark all items"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/UnmarkItems"
+        android:orderInCategory="1"
+        android:title="Unmark all items"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/ShareList"
+        android:orderInCategory="1"
+        android:title="Share List by Email"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/ShareListW"
+        android:orderInCategory="1"
+        android:title="Share List by Whatsapp"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/Settings"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        android:title="@string/Settings"/>
+
+
+
+
+
+
+</menu>

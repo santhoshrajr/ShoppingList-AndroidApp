@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.santh.shopping.shoppinglist">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="my.santh.shopping.shoppinglist.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="my.santh.shopping.shoppinglist.InfoActivity"
+            android:label="App Info"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="my.santh.shopping.shoppinglist.LaunchActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="my.santh.shopping.shoppinglist.ListActivity"
+            android:label="@string/title_activity_list"
+            android:parentActivityName="my.santh.shopping.shoppinglist.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="my.santh.shopping.shoppinglist.MainActivity" />
+        </activity>
+        <activity
+            android:name="my.santh.shopping.shoppinglist.ItemActivity"
+            android:label="@string/title_activity_item"
+            android:parentActivityName="my.santh.shopping.shoppinglist.ListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="my.santh.shopping.shoppinglist.ListActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsItem"
+            android:label="@string/title_activity_settings_item"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="my.santh.shopping.shoppinglist.SettingsListActivity"
+            android:label="@string/title_activity_settings_list"
+           >
+
+        </activity>
+        <activity
+            android:name="my.santh.shopping.shoppinglist.SettingsItemActivity"
+            android:label="@string/title_activity_settings_item"></activity>
+    </application>
+
+</manifest>

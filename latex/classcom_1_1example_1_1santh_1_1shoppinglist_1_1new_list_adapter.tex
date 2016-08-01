@@ -1,0 +1,105 @@
+\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter}{}\section{com.\+example.\+santh.\+shoppinglist.\+new\+List\+Adapter Class Reference}
+\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter}\index{com.\+example.\+santh.\+shoppinglist.\+new\+List\+Adapter@{com.\+example.\+santh.\+shoppinglist.\+new\+List\+Adapter}}
+
+
+New\+List\+Adapter Class to Display List name and other parameters .It uses four text view Listname ,Date,List price and count of purchased items/\+Un\+Purchaseditems.  
+
+
+Inheritance diagram for com.\+example.\+santh.\+shoppinglist.\+new\+List\+Adapter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_a6588c4f209fa421cf412c9179694dfa2}{new\+List\+Adapter} (Context context, Cursor c)
+\item 
+View \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_aba836d3e18b7f55004be894a8bb11824}{new\+View} (final Context context, final Cursor cursor, View\+Group parent)
+\begin{DoxyCompactList}\small\item\em Inflating the layout with the view. \end{DoxyCompactList}\item 
+long \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_ad73c83f0b3e981b191e8ff6185d8c5a4}{get\+Item\+Id} (int pos)
+\item 
+void \hyperlink{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_a44d6e78584f2ef7351061206f467e0b3}{bind\+View} (View v, final Context context, final Cursor c)
+\begin{DoxyCompactList}\small\item\em Binding the view to Layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+New\+List\+Adapter Class to Display List name and other parameters .It uses four text view Listname ,Date,List price and count of purchased items/\+Un\+Purchaseditems. 
+
+The inflater layout has these four Text views which are binded in this adapter class 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter@{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter}!new\+List\+Adapter@{new\+List\+Adapter}}
+\index{new\+List\+Adapter@{new\+List\+Adapter}!com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter@{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter}}
+\subsubsection[{\texorpdfstring{new\+List\+Adapter(\+Context context, Cursor c)}{newListAdapter(Context context, Cursor c)}}]{\setlength{\rightskip}{0pt plus 5cm}com.\+example.\+santh.\+shoppinglist.\+new\+List\+Adapter.\+new\+List\+Adapter (
+\begin{DoxyParamCaption}
+\item[{Context}]{context, }
+\item[{Cursor}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_a6588c4f209fa421cf412c9179694dfa2}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_a6588c4f209fa421cf412c9179694dfa2}
+
+
+\subsection{Member Function Documentation}
+\index{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter@{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter}!bind\+View@{bind\+View}}
+\index{bind\+View@{bind\+View}!com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter@{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter}}
+\subsubsection[{\texorpdfstring{bind\+View(\+View v, final Context context, final Cursor c)}{bindView(View v, final Context context, final Cursor c)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+santh.\+shoppinglist.\+new\+List\+Adapter.\+bind\+View (
+\begin{DoxyParamCaption}
+\item[{View}]{v, }
+\item[{final Context}]{context, }
+\item[{final Cursor}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_a44d6e78584f2ef7351061206f467e0b3}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_a44d6e78584f2ef7351061206f467e0b3}
+
+
+Binding the view to Layout. 
+
+\begin{DoxyAuthor}{Author}
+will
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em v} & The view in which the elements we set up here will be displayed.\\
+\hline
+{\em context} & The running context where this List\+View adapter will be active.\\
+\hline
+{\em c} & The Cursor containing the query results we will display. \\
+\hline
+\end{DoxyParams}
+\index{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter@{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter}!get\+Item\+Id@{get\+Item\+Id}}
+\index{get\+Item\+Id@{get\+Item\+Id}!com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter@{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter}}
+\subsubsection[{\texorpdfstring{get\+Item\+Id(int pos)}{getItemId(int pos)}}]{\setlength{\rightskip}{0pt plus 5cm}long com.\+example.\+santh.\+shoppinglist.\+new\+List\+Adapter.\+get\+Item\+Id (
+\begin{DoxyParamCaption}
+\item[{int}]{pos}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_ad73c83f0b3e981b191e8ff6185d8c5a4}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_ad73c83f0b3e981b191e8ff6185d8c5a4}
+\index{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter@{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter}!new\+View@{new\+View}}
+\index{new\+View@{new\+View}!com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter@{com\+::example\+::santh\+::shoppinglist\+::new\+List\+Adapter}}
+\subsubsection[{\texorpdfstring{new\+View(final Context context, final Cursor cursor, View\+Group parent)}{newView(final Context context, final Cursor cursor, ViewGroup parent)}}]{\setlength{\rightskip}{0pt plus 5cm}View com.\+example.\+santh.\+shoppinglist.\+new\+List\+Adapter.\+new\+View (
+\begin{DoxyParamCaption}
+\item[{final Context}]{context, }
+\item[{final Cursor}]{cursor, }
+\item[{View\+Group}]{parent}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_aba836d3e18b7f55004be894a8bb11824}{}\label{classcom_1_1example_1_1santh_1_1shoppinglist_1_1new_list_adapter_aba836d3e18b7f55004be894a8bb11824}
+
+
+Inflating the layout with the view. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & \\
+\hline
+{\em cursor} & \\
+\hline
+{\em parent} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Android/\+Shopping\+List\+D\+B4 2/app/src/main/java/com/example/santh/shoppinglist/\hyperlink{new_list_adapter_8java}{new\+List\+Adapter.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <CheckBoxPreference
+        android:key="Sort Lists"
+        android:title="Sort Lists alphabetically"
+        android:summary="Option if Selected will sort the lists alphabetically"
+        android:defaultValue="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBoxPreference
+        android:key="Sort Price"
+        android:title="Sort Lists by Price"
+        android:summary="Option if Selected will sort the lists by Cost"
+        android:defaultValue="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListPreference
+
+        android:key="Currency"
+        android:title="Choose Currency "
+        android:dialogTitle="Currency"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues"
+        android:defaultValue="$"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </PreferenceScreen>

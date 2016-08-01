@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <CheckBoxPreference
+        android:key="Sort Items"
+        android:title="Sort Items alphabetically"
+        android:summary="Option if Selected will sort the Items alphabetically"
+        android:defaultValue="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBoxPreference
+        android:key="Sort Category"
+        android:title="Sort Items by Category"
+        android:summary="Option if Selected will sort the Items by Category "
+        android:defaultValue="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBoxPreference
+        android:key="Hide Items"
+        android:title="Hide Purchased Items"
+        android:summary="Option if Selected will hide all the purchased items"
+        android:defaultValue="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</PreferenceScreen>

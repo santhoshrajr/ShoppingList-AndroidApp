@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="my.santh.shopping.shoppinglist.ItemActivity"
+    tools:showIn="@layout/activity_item">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/voice"
+        android:src="@drawable/voice"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onVoice"
+
+
+
+        />
+   <!-- <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Name"
+        android:hint="Name"
+        android:layout_alignBottom="@+id/voice"
+        android:layout_toRightOf="@+id/voice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />-->
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Name"
+        android:hint="Name"
+        android:layout_alignBottom="@+id/voice"
+        android:layout_toRightOf="@+id/voice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>-->
+
+
+    <my.santh.shopping.shoppinglist.CustomAutoCompleteView
+        android:id="@+id/myautocomplete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="Enter Item Description"
+
+
+        android:layout_toRightOf="@+id/voice"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+
+        >
+    </my.santh.shopping.shoppinglist.CustomAutoCompleteView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Quantity"
+        android:hint="Quantity"
+        android:layout_below="@+id/myautocomplete"
+        android:layout_toLeftOf="@+id/textdollars"
+        android:layout_toStartOf="@+id/textdollars" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/Price"
+        android:layout_below="@+id/Quantity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Price" />
+
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/units"
+
+        android:layout_below="@+id/myautocomplete"
+        android:layout_alignBottom="@+id/Quantity"
+        android:layout_toRightOf="@+id/Quantity"
+        android:layout_toEndOf="@+id/Quantity"
+         />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textdollars"
+        android:text="Hello"
+        android:textAlignment="inherit"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_above="@+id/comments"
+        android:layout_toRightOf="@+id/Price"
+        android:layout_toEndOf="@+id/Price" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/comments"
+        android:layout_below="@+id/Price"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="comments" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category"
+
+        android:layout_below="@+id/comments"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/additem"
+        android:src="@drawable/addlistitem"
+        android:layout_below="@+id/category"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:onClick="AddItem" />
+
+   <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:src="@drawable/update"
+        android:onClick="UpdateItem"
+        android:layout_alignTop="@+id/additem"
+        android:layout_alignRight="@+id/category"
+        android:layout_alignEnd="@+id/category" />-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:src="@drawable/update"
+        android:onClick="UpdateItem"
+        android:layout_below="@+id/category"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancel"
+        android:src="@drawable/delete"
+        android:onClick="goback"
+        android:layout_alignTop="@+id/additem"
+        android:layout_alignRight="@+id/category"
+        android:layout_alignEnd="@+id/category" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cow"
+        android:src="@drawable/rszcow"
+
+        android:onClick="onCow"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/additem"
+        android:layout_marginBottom="40dp" />
+
+</RelativeLayout>

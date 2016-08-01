@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['setcontentview',['setContentView',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_app_compat_preference_activity.html#a9d021010ecb1f31e868c641dd2a6e6b3',1,'com.example.santh.shoppinglist.AppCompatPreferenceActivity.setContentView(@LayoutRes int layoutResID)'],['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_app_compat_preference_activity.html#a64f5a742df7b01ab2e792f0a1cbb275f',1,'com.example.santh.shoppinglist.AppCompatPreferenceActivity.setContentView(View view)'],['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_app_compat_preference_activity.html#a3066cf4e43669fca5248a0b404ec98ae',1,'com.example.santh.shoppinglist.AppCompatPreferenceActivity.setContentView(View view, ViewGroup.LayoutParams params)']]],
+  ['setsupportactionbar',['setSupportActionBar',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_app_compat_preference_activity.html#a54367107d69645983c9fd1910aea94b7',1,'com::example::santh::shoppinglist::AppCompatPreferenceActivity']]],
+  ['settingsitemactivity',['SettingsItemActivity',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_settings_item_activity.html',1,'com::example::santh::shoppinglist']]],
+  ['settingsitemactivity_2ejava',['SettingsItemActivity.java',['../_settings_item_activity_8java.html',1,'']]],
+  ['settingslistactivity',['SettingsListActivity',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_settings_list_activity.html',1,'com::example::santh::shoppinglist']]],
+  ['settingslistactivity_2ejava',['SettingsListActivity.java',['../_settings_list_activity_8java.html',1,'']]],
+  ['sharelistdata',['shareListdata',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#afb695f603f9d2f7e58c3746e535358ec',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortcategory',['sortcategory',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#a9b0d6f7aeea8ec2126210a3ab0f15bad',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortcategorydata',['sortcategorydata',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#a3b63b54bc23f0a06749e710cde064995',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortdata',['sortdata',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#a22a3d9161c068013b59434ce07511985',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortlists',['sortLists',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#ac00576993fafdc4d77e7794a351d7365',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortlistsprice',['sortListsPrice',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#a7a587023ac7dcef1569da63b6cbf4d66',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortlistspricealpha',['sortListsPriceAlpha',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#ae1cac16a081cbd3ed3fc0dded7c3d306',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortshow010',['sortshow010',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#aabf476fd3269890f86e97eb7948c95c4',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortshow100',['sortshow100',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#abbf59fb07c43e403b0a231d9be6f6ad4',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortshow110',['sortshow110',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#a26442de7ea4e3da9f5a57fb1005b063b',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['sortshowall',['sortshowall',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#afdb5f5c276c4111164a9c261d040a64d',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['staticdata',['StaticData',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_static_data.html',1,'com::example::santh::shoppinglist']]],
+  ['staticdata_2ejava',['StaticData.java',['../_static_data_8java.html',1,'']]],
+  ['strikeallitems',['strikeallitems',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_data_base_manager.html#a968efcc4a15cd2582dbb46253c67fa96',1,'com::example::santh::shoppinglist::DataBaseManager']]],
+  ['syncitem',['SyncItem',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_main_activity.html#a8bfe7142d15e2e78fae9d170da7ae957',1,'com::example::santh::shoppinglist::MainActivity']]],
+  ['syncitems',['SyncItems',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_list_activity.html#a019462edc2e1d011fe110720b294fe41',1,'com::example::santh::shoppinglist::ListActivity']]],
+  ['syncwithexternal',['SyncWithExternal',['../classcom_1_1example_1_1santh_1_1shoppinglist_1_1_static_data.html#a3fa6524314249be47286f9c1e77fcd38',1,'com::example::santh::shoppinglist::StaticData']]]
+];
